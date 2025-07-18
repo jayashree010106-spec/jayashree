@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SimpleSumAverage {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int d = scanner.nextInt();
+        int e = scanner.nextInt();
+
+        int sum = a + b + c + d + e;
+        double average = sum / 5.0;
+
+        System.out.println("Sum of the 5 number is : " + sum);
+        System.out.println("Average of the 5 number is : " + average);
+
+        scanner.close();
+    }
+}
