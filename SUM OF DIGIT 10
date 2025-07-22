@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        if (input.length() <= 2 || !input.matches("\\d+")) {
+            System.out.println("Invalid Input");
+        } else {
+            int sum = 0;
+            for (int i = 0; i < input.length(); i++) {
+                sum += Character.getNumericValue(input.charAt(i));
+            }
+            System.out.println("Sum of digit is " + sum);
+        }
+    }
+}
