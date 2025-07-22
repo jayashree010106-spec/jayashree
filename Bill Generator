@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args)
+    {
+    Scanner sc=new Scanner(System.in);
+        int pizza=sc.nextInt();
+        int puffs=sc.nextInt();
+        int cools=sc.nextInt();
+        int Total =(pizza*100)+(puffs*20)+(cools*10);
+        System.out.println("Bill Details");
+        System.out.println("No of pizzas:"+pizza);
+        System.out.println("No of puffs:"+puffs);
+        System.out.println("No of cooldrinks:"+cools);
+        System.out.println("Total price="+Total);
+        System.out.println("ENJOY THE SHOW!!!");
+        
+    }
+}
